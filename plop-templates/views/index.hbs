@@ -1,0 +1,23 @@
+import React from 'react';
+import {Text, ScrollView, SafeAreaView} from 'react-native';
+import styles from './style';
+
+interface {{pascalCase name}}Props {  
+  navigation?: any; 
+}
+
+const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = (props) => {
+  const {navigation = () => false} = props;
+
+  return (
+    <SafeAreaView style={[styles.container]}>    
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
+            <Text>{{pascalCase name}} component</Text>
+        </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+
+
+export default {{pascalCase name}} ;
