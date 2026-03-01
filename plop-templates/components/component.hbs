@@ -1,0 +1,22 @@
+import React from 'react';
+import {View, Text, ViewStyle} from 'react-native';
+import styles from './style';
+
+interface {{pascalCase name}}Props {  
+  rootStyle?: ViewStyle;
+  [key: string]: any;
+}
+
+const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = (props) => {
+  const {rootStyle = {}, ...rest} = props;
+
+  return (
+    <View style={[styles.container, rootStyle]} {...rest}>    
+      <Text>{{pascalCase name}} component</Text>
+    </View>
+  );
+};
+
+
+
+export { {{pascalCase name}} };
